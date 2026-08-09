@@ -1,0 +1,57 @@
+[
+  {
+    "document_id": "general-faq-001",
+    "path": "data/documents/general/company_faq.md",
+    "tenant_id": "techcorp",
+    "department": "general",
+    "classification": "internal",
+    "owner": "Corporate Communications",
+    "allowed_groups": ["Employees"],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  },
+  {
+    "document_id": "engineering-architecture-001",
+    "path": "data/documents/engineering/architecture_standards.md",
+    "tenant_id": "techcorp",
+    "department": "engineering",
+    "classification": "internal",
+    "owner": "Enterprise Architecture",
+    "allowed_groups": ["Engineering", "Architecture"],
+    "trusted": true,
+    "source_system": "simulated-confluence"
+  },
+  {
+    "document_id": "hr-compensation-001",
+    "path": "data/documents/hr/executive_compensation.md",
+    "tenant_id": "techcorp",
+    "department": "hr",
+    "classification": "confidential",
+    "owner": "Human Resources",
+    "allowed_groups": ["HR", "Executive"],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  },
+  {
+    "document_id": "security-ir-001",
+    "path": "data/documents/security/incident_response.md",
+    "tenant_id": "techcorp",
+    "department": "security",
+    "classification": "restricted",
+    "owner": "Security Operations",
+    "allowed_groups": ["Security"],
+    "trusted": true,
+    "source_system": "simulated-confluence"
+  },
+  {
+    "document_id": "finance-forecast-001",
+    "path": "data/documents/finance/fy2027_forecast.md",
+    "tenant_id": "techcorp",
+    "department": "finance",
+    "classification": "confidential",
+    "owner": "Finance",
+    "allowed_groups": ["Finance", "Executive"],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  }
+]

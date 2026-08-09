@@ -1,0 +1,80 @@
+[
+  {
+    "scenario_id": "engineering-general",
+    "user_id": "alice",
+    "document_id": "general-faq-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "engineering-architecture",
+    "user_id": "alice",
+    "document_id": "engineering-architecture-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "engineering-hr-compensation",
+    "user_id": "alice",
+    "document_id": "hr-compensation-001",
+    "expected": "deny"
+  },
+  {
+    "scenario_id": "engineering-security-ir",
+    "user_id": "alice",
+    "document_id": "security-ir-001",
+    "expected": "deny"
+  },
+  {
+    "scenario_id": "hr-compensation",
+    "user_id": "bob",
+    "document_id": "hr-compensation-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "hr-architecture",
+    "user_id": "bob",
+    "document_id": "engineering-architecture-001",
+    "expected": "deny"
+  },
+  {
+    "scenario_id": "security-incident-response",
+    "user_id": "carol",
+    "document_id": "security-ir-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "security-finance",
+    "user_id": "carol",
+    "document_id": "finance-forecast-001",
+    "expected": "deny"
+  },
+  {
+    "scenario_id": "finance-forecast",
+    "user_id": "dana",
+    "document_id": "finance-forecast-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "finance-compensation",
+    "user_id": "dana",
+    "document_id": "hr-compensation-001",
+    "expected": "deny"
+  },
+  {
+    "scenario_id": "executive-compensation",
+    "user_id": "erin",
+    "document_id": "hr-compensation-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "executive-forecast",
+    "user_id": "erin",
+    "document_id": "finance-forecast-001",
+    "expected": "allow"
+  },
+  {
+    "scenario_id": "executive-security-ir",
+    "user_id": "erin",
+    "document_id": "security-ir-001",
+    "expected": "deny"
+  }
+]

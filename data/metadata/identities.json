@@ -1,0 +1,27 @@
+[
+  {
+    "user_id": "alice",
+    "tenant_id": "techcorp",
+    "groups": ["Engineering", "Employees"]
+  },
+  {
+    "user_id": "bob",
+    "tenant_id": "techcorp",
+    "groups": ["HR", "Employees"]
+  },
+  {
+    "user_id": "carol",
+    "tenant_id": "techcorp",
+    "groups": ["Security", "Employees"]
+  },
+  {
+    "user_id": "dana",
+    "tenant_id": "techcorp",
+    "groups": ["Finance", "Employees"]
+  },
+  {
+    "user_id": "erin",
+    "tenant_id": "techcorp",
+    "groups": ["Executive", "Employees"]
+  }
+]
