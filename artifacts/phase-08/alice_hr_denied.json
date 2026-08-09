@@ -1,0 +1,151 @@
+{
+  "identity": {
+    "user_id": "alice",
+    "tenant_id": "techcorp",
+    "groups": [
+      "Engineering",
+      "Employees"
+    ]
+  },
+  "query": "What is the executive compensation policy?",
+  "max_distance": 1.2,
+  "candidate_count": 5,
+  "authorized_result_count": 0,
+  "abstain": true,
+  "evaluated_candidates": [
+    {
+      "rank": 1,
+      "chunk_id": "hr-compensation-001::chunk::0000",
+      "document_id": "hr-compensation-001",
+      "distance": 0.8215678334236145,
+      "content": "# TechCorp Executive Compensation Policy\n\nExecutive compensation information is confidential Human Resources information.\n\nCompensation packages may include salary, performance incentives, long-term incentives, and approved benefits.\n\nIndividual compensation details must only be accessed by authorized Human Resources personnel and specifically approved executives.\n",
+      "metadata": {
+        "tenant_id": "techcorp",
+        "classification": "confidential",
+        "document_id": "hr-compensation-001",
+        "allowed_groups": [
+          "HR",
+          "Executive"
+        ],
+        "path": "data/documents/hr/executive_compensation.md",
+        "trusted": true,
+        "owner": "Human Resources",
+        "department": "hr",
+        "source_system": "simulated-sharepoint"
+      },
+      "relevant": true,
+      "authorized": false,
+      "authorization_reason": "group_not_authorized",
+      "tenant_match": true,
+      "group_match": false,
+      "eligible": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "security-ir-001::chunk::0000",
+      "document_id": "security-ir-001",
+      "distance": 1.5430833101272583,
+      "content": "# TechCorp Security Incident Response Policy\n\nSuspected security incidents must be reported to the Security Operations team.\n\nIncident records should capture the affected system, detection time, severity, owner, containment actions, and remediation status.\n\nRestricted incident evidence must only be shared with authorized security personnel and approved stakeholders.\n",
+      "metadata": {
+        "path": "data/documents/security/incident_response.md",
+        "owner": "Security Operations",
+        "department": "security",
+        "trusted": true,
+        "tenant_id": "techcorp",
+        "allowed_groups": [
+          "Security"
+        ],
+        "classification": "restricted",
+        "document_id": "security-ir-001",
+        "source_system": "simulated-confluence"
+      },
+      "relevant": false,
+      "authorized": false,
+      "authorization_reason": "group_not_authorized",
+      "tenant_match": true,
+      "group_match": false,
+      "eligible": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "finance-forecast-001::chunk::0000",
+      "document_id": "finance-forecast-001",
+      "distance": 1.7499812841415405,
+      "content": "# TechCorp FY2027 Financial Forecast\n\nThis document contains confidential internal financial planning information.\n\nThe forecast includes expected revenue growth, infrastructure expenditure, hiring assumptions, and strategic investment planning.\n\nAccess is limited to authorized Finance personnel and executive leadership.\n",
+      "metadata": {
+        "document_id": "finance-forecast-001",
+        "classification": "confidential",
+        "allowed_groups": [
+          "Finance",
+          "Executive"
+        ],
+        "tenant_id": "techcorp",
+        "source_system": "simulated-sharepoint",
+        "department": "finance",
+        "trusted": true,
+        "path": "data/documents/finance/fy2027_forecast.md",
+        "owner": "Finance"
+      },
+      "relevant": false,
+      "authorized": false,
+      "authorization_reason": "group_not_authorized",
+      "tenant_match": true,
+      "group_match": false,
+      "eligible": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "engineering-architecture-001::chunk::0000",
+      "document_id": "engineering-architecture-001",
+      "distance": 1.8506381511688232,
+      "content": "# TechCorp Architecture Standards\n\n## API Authentication\n\nProduction APIs must use approved identity-based authentication.\n\nStatic credentials should not be embedded in application source code.\n\n## Encryption\n\nSensitive application traffic must use encrypted transport.\n\n## Service Identity\n\nProduction workloads should use managed workload identities where supported.\n\n## Logging\n\nSecurity-relevant events must be forwarded to approved centralized logging systems.\n",
+      "metadata": {
+        "source_system": "simulated-confluence",
+        "owner": "Enterprise Architecture",
+        "tenant_id": "techcorp",
+        "document_id": "engineering-architecture-001",
+        "trusted": true,
+        "path": "data/documents/engineering/architecture_standards.md",
+        "classification": "internal",
+        "allowed_groups": [
+          "Engineering",
+          "Architecture"
+        ],
+        "department": "engineering"
+      },
+      "relevant": false,
+      "authorized": true,
+      "authorization_reason": "authorized",
+      "tenant_match": true,
+      "group_match": true,
+      "eligible": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "general-faq-001::chunk::0000",
+      "document_id": "general-faq-001",
+      "distance": 1.9659216403961182,
+      "content": "# TechCorp Company FAQ\n\n## Office Hours\n\nStandard office hours are 9:00 AM to 5:00 PM local time.\n\n## Pet Policy\n\nEmployees may bring approved pets into designated office areas.\n\nPets must remain under the employee's control and may not enter secure laboratories or food preparation areas.\n\n## Remote Work\n\nEmployees may work remotely according to their department's approved hybrid-work schedule.\n",
+      "metadata": {
+        "classification": "internal",
+        "department": "general",
+        "source_system": "simulated-sharepoint",
+        "owner": "Corporate Communications",
+        "allowed_groups": [
+          "Employees"
+        ],
+        "document_id": "general-faq-001",
+        "trusted": true,
+        "tenant_id": "techcorp",
+        "path": "data/documents/general/company_faq.md"
+      },
+      "relevant": false,
+      "authorized": true,
+      "authorization_reason": "authorized",
+      "tenant_match": true,
+      "group_match": true,
+      "eligible": false
+    }
+  ],
+  "authorized_results": []
+}
