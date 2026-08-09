@@ -1,0 +1,73 @@
+{
+  "query": "How do I configure a Kubernetes GPU scheduler?",
+  "top_k": 3,
+  "max_distance": 1.2,
+  "candidate_count": 3,
+  "accepted_count": 0,
+  "abstain": true,
+  "candidates": [
+    {
+      "rank": 1,
+      "chunk_id": "engineering-architecture-001::chunk::0000",
+      "document_id": "engineering-architecture-001",
+      "distance": 1.6592791080474854,
+      "content": "# TechCorp Architecture Standards\n\n## API Authentication\n\nProduction APIs must use approved identity-based authentication.\n\nStatic credentials should not be embedded in application source code.\n\n## Encryption\n\nSensitive application traffic must use encrypted transport.\n\n## Service Identity\n\nProduction workloads should use managed workload identities where supported.\n\n## Logging\n\nSecurity-relevant events must be forwarded to approved centralized logging systems.\n",
+      "metadata": {
+        "path": "data/documents/engineering/architecture_standards.md",
+        "tenant_id": "techcorp",
+        "owner": "Enterprise Architecture",
+        "classification": "internal",
+        "trusted": true,
+        "allowed_groups": [
+          "Engineering",
+          "Architecture"
+        ],
+        "source_system": "simulated-confluence",
+        "department": "engineering",
+        "document_id": "engineering-architecture-001"
+      }
+    },
+    {
+      "rank": 2,
+      "chunk_id": "general-faq-001::chunk::0000",
+      "document_id": "general-faq-001",
+      "distance": 1.667883276939392,
+      "content": "# TechCorp Company FAQ\n\n## Office Hours\n\nStandard office hours are 9:00 AM to 5:00 PM local time.\n\n## Pet Policy\n\nEmployees may bring approved pets into designated office areas.\n\nPets must remain under the employee's control and may not enter secure laboratories or food preparation areas.\n\n## Remote Work\n\nEmployees may work remotely according to their department's approved hybrid-work schedule.\n",
+      "metadata": {
+        "allowed_groups": [
+          "Employees"
+        ],
+        "classification": "internal",
+        "trusted": true,
+        "tenant_id": "techcorp",
+        "source_system": "simulated-sharepoint",
+        "owner": "Corporate Communications",
+        "document_id": "general-faq-001",
+        "path": "data/documents/general/company_faq.md",
+        "department": "general"
+      }
+    },
+    {
+      "rank": 3,
+      "chunk_id": "finance-forecast-001::chunk::0000",
+      "document_id": "finance-forecast-001",
+      "distance": 1.8014601469039917,
+      "content": "# TechCorp FY2027 Financial Forecast\n\nThis document contains confidential internal financial planning information.\n\nThe forecast includes expected revenue growth, infrastructure expenditure, hiring assumptions, and strategic investment planning.\n\nAccess is limited to authorized Finance personnel and executive leadership.\n",
+      "metadata": {
+        "trusted": true,
+        "path": "data/documents/finance/fy2027_forecast.md",
+        "classification": "confidential",
+        "tenant_id": "techcorp",
+        "owner": "Finance",
+        "document_id": "finance-forecast-001",
+        "department": "finance",
+        "allowed_groups": [
+          "Finance",
+          "Executive"
+        ],
+        "source_system": "simulated-sharepoint"
+      }
+    }
+  ],
+  "accepted_results": []
+}

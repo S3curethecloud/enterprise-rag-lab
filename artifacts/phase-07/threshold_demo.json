@@ -1,0 +1,90 @@
+{
+  "query": "Are pets allowed in the office?",
+  "max_distance": 1.2,
+  "candidates": [
+    {
+      "rank": 1,
+      "chunk_id": "general-faq-001::chunk::0000",
+      "document_id": "general-faq-001",
+      "distance": 0.8296388983726501,
+      "content": "# TechCorp Company FAQ\n\n## Office Hours\n\nStandard office hours are 9:00 AM to 5:00 PM local time.\n\n## Pet Policy\n\nEmployees may bring approved pets into designated office areas.\n\nPets must remain under the employee's control and may not enter secure laboratories or food preparation areas.\n\n## Remote Work\n\nEmployees may work remotely according to their department's approved hybrid-work schedule.\n",
+      "metadata": {
+        "trusted": true,
+        "owner": "Corporate Communications",
+        "department": "general",
+        "path": "data/documents/general/company_faq.md",
+        "classification": "internal",
+        "source_system": "simulated-sharepoint",
+        "tenant_id": "techcorp",
+        "allowed_groups": [
+          "Employees"
+        ],
+        "document_id": "general-faq-001"
+      }
+    },
+    {
+      "rank": 2,
+      "chunk_id": "security-ir-001::chunk::0000",
+      "document_id": "security-ir-001",
+      "distance": 1.7448716163635254,
+      "content": "# TechCorp Security Incident Response Policy\n\nSuspected security incidents must be reported to the Security Operations team.\n\nIncident records should capture the affected system, detection time, severity, owner, containment actions, and remediation status.\n\nRestricted incident evidence must only be shared with authorized security personnel and approved stakeholders.\n",
+      "metadata": {
+        "tenant_id": "techcorp",
+        "classification": "restricted",
+        "allowed_groups": [
+          "Security"
+        ],
+        "owner": "Security Operations",
+        "source_system": "simulated-confluence",
+        "path": "data/documents/security/incident_response.md",
+        "department": "security",
+        "trusted": true,
+        "document_id": "security-ir-001"
+      }
+    },
+    {
+      "rank": 3,
+      "chunk_id": "engineering-architecture-001::chunk::0000",
+      "document_id": "engineering-architecture-001",
+      "distance": 1.7729501724243164,
+      "content": "# TechCorp Architecture Standards\n\n## API Authentication\n\nProduction APIs must use approved identity-based authentication.\n\nStatic credentials should not be embedded in application source code.\n\n## Encryption\n\nSensitive application traffic must use encrypted transport.\n\n## Service Identity\n\nProduction workloads should use managed workload identities where supported.\n\n## Logging\n\nSecurity-relevant events must be forwarded to approved centralized logging systems.\n",
+      "metadata": {
+        "allowed_groups": [
+          "Engineering",
+          "Architecture"
+        ],
+        "classification": "internal",
+        "source_system": "simulated-confluence",
+        "department": "engineering",
+        "document_id": "engineering-architecture-001",
+        "owner": "Enterprise Architecture",
+        "path": "data/documents/engineering/architecture_standards.md",
+        "tenant_id": "techcorp",
+        "trusted": true
+      }
+    }
+  ],
+  "accepted_results": [
+    {
+      "rank": 1,
+      "chunk_id": "general-faq-001::chunk::0000",
+      "document_id": "general-faq-001",
+      "distance": 0.8296388983726501,
+      "content": "# TechCorp Company FAQ\n\n## Office Hours\n\nStandard office hours are 9:00 AM to 5:00 PM local time.\n\n## Pet Policy\n\nEmployees may bring approved pets into designated office areas.\n\nPets must remain under the employee's control and may not enter secure laboratories or food preparation areas.\n\n## Remote Work\n\nEmployees may work remotely according to their department's approved hybrid-work schedule.\n",
+      "metadata": {
+        "trusted": true,
+        "owner": "Corporate Communications",
+        "department": "general",
+        "path": "data/documents/general/company_faq.md",
+        "classification": "internal",
+        "source_system": "simulated-sharepoint",
+        "tenant_id": "techcorp",
+        "allowed_groups": [
+          "Employees"
+        ],
+        "document_id": "general-faq-001"
+      }
+    }
+  ],
+  "abstain": false
+}
