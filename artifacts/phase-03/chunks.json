@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_id": "general-faq-001::chunk::0000",
+    "document_id": "general-faq-001",
+    "chunk_index": 0,
+    "start_char": 0,
+    "end_char": 398,
+    "content": "# TechCorp Company FAQ\n\n## Office Hours\n\nStandard office hours are 9:00 AM to 5:00 PM local time.\n\n## Pet Policy\n\nEmployees may bring approved pets into designated office areas.\n\nPets must remain under the employee's control and may not enter secure laboratories or food preparation areas.\n\n## Remote Work\n\nEmployees may work remotely according to their department's approved hybrid-work schedule.\n",
+    "metadata": {
+      "document_id": "general-faq-001",
+      "path": "data/documents/general/company_faq.md",
+      "tenant_id": "techcorp",
+      "department": "general",
+      "classification": "internal",
+      "owner": "Corporate Communications",
+      "allowed_groups": [
+        "Employees"
+      ],
+      "trusted": true,
+      "source_system": "simulated-sharepoint"
+    }
+  },
+  {
+    "chunk_id": "engineering-architecture-001::chunk::0000",
+    "document_id": "engineering-architecture-001",
+    "chunk_index": 0,
+    "start_char": 0,
+    "end_char": 466,
+    "content": "# TechCorp Architecture Standards\n\n## API Authentication\n\nProduction APIs must use approved identity-based authentication.\n\nStatic credentials should not be embedded in application source code.\n\n## Encryption\n\nSensitive application traffic must use encrypted transport.\n\n## Service Identity\n\nProduction workloads should use managed workload identities where supported.\n\n## Logging\n\nSecurity-relevant events must be forwarded to approved centralized logging systems.\n",
+    "metadata": {
+      "document_id": "engineering-architecture-001",
+      "path": "data/documents/engineering/architecture_standards.md",
+      "tenant_id": "techcorp",
+      "department": "engineering",
+      "classification": "internal",
+      "owner": "Enterprise Architecture",
+      "allowed_groups": [
+        "Engineering",
+        "Architecture"
+      ],
+      "trusted": true,
+      "source_system": "simulated-confluence"
+    }
+  },
+  {
+    "chunk_id": "hr-compensation-001::chunk::0000",
+    "document_id": "hr-compensation-001",
+    "chunk_index": 0,
+    "start_char": 0,
+    "end_char": 367,
+    "content": "# TechCorp Executive Compensation Policy\n\nExecutive compensation information is confidential Human Resources information.\n\nCompensation packages may include salary, performance incentives, long-term incentives, and approved benefits.\n\nIndividual compensation details must only be accessed by authorized Human Resources personnel and specifically approved executives.\n",
+    "metadata": {
+      "document_id": "hr-compensation-001",
+      "path": "data/documents/hr/executive_compensation.md",
+      "tenant_id": "techcorp",
+      "department": "hr",
+      "classification": "confidential",
+      "owner": "Human Resources",
+      "allowed_groups": [
+        "HR",
+        "Executive"
+      ],
+      "trusted": true,
+      "source_system": "simulated-sharepoint"
+    }
+  },
+  {
+    "chunk_id": "security-ir-001::chunk::0000",
+    "document_id": "security-ir-001",
+    "chunk_index": 0,
+    "start_char": 0,
+    "end_char": 369,
+    "content": "# TechCorp Security Incident Response Policy\n\nSuspected security incidents must be reported to the Security Operations team.\n\nIncident records should capture the affected system, detection time, severity, owner, containment actions, and remediation status.\n\nRestricted incident evidence must only be shared with authorized security personnel and approved stakeholders.\n",
+    "metadata": {
+      "document_id": "security-ir-001",
+      "path": "data/documents/security/incident_response.md",
+      "tenant_id": "techcorp",
+      "department": "security",
+      "classification": "restricted",
+      "owner": "Security Operations",
+      "allowed_groups": [
+        "Security"
+      ],
+      "trusted": true,
+      "source_system": "simulated-confluence"
+    }
+  },
+  {
+    "chunk_id": "finance-forecast-001::chunk::0000",
+    "document_id": "finance-forecast-001",
+    "chunk_index": 0,
+    "start_char": 0,
+    "end_char": 323,
+    "content": "# TechCorp FY2027 Financial Forecast\n\nThis document contains confidential internal financial planning information.\n\nThe forecast includes expected revenue growth, infrastructure expenditure, hiring assumptions, and strategic investment planning.\n\nAccess is limited to authorized Finance personnel and executive leadership.\n",
+    "metadata": {
+      "document_id": "finance-forecast-001",
+      "path": "data/documents/finance/fy2027_forecast.md",
+      "tenant_id": "techcorp",
+      "department": "finance",
+      "classification": "confidential",
+      "owner": "Finance",
+      "allowed_groups": [
+        "Finance",
+        "Executive"
+      ],
+      "trusted": true,
+      "source_system": "simulated-sharepoint"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "document_count": 5,
+  "chunk_count": 5,
+  "chunk_size": 500,
+  "overlap": 100,
+  "stride": 400,
+  "chunks_per_document": {
+    "general-faq-001": 1,
+    "engineering-architecture-001": 1,
+    "hr-compensation-001": 1,
+    "security-ir-001": 1,
+    "finance-forecast-001": 1
+  }
+}
