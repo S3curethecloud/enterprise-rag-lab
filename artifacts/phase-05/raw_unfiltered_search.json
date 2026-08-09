@@ -1,0 +1,100 @@
+{
+  "query": "What is the executive compensation policy?",
+  "authorization_filter_applied": false,
+  "warning": "NO AUTHORIZATION FILTER APPLIED",
+  "results": [
+    {
+      "rank": 1,
+      "chunk_id": "hr-compensation-001::chunk::0000",
+      "distance": 0.8215678334236145,
+      "metadata": {
+        "document_id": "hr-compensation-001",
+        "source_system": "simulated-sharepoint",
+        "trusted": true,
+        "department": "hr",
+        "allowed_groups": [
+          "HR",
+          "Executive"
+        ],
+        "tenant_id": "techcorp",
+        "classification": "confidential",
+        "owner": "Human Resources",
+        "path": "data/documents/hr/executive_compensation.md"
+      }
+    },
+    {
+      "rank": 2,
+      "chunk_id": "security-ir-001::chunk::0000",
+      "distance": 1.5430833101272583,
+      "metadata": {
+        "path": "data/documents/security/incident_response.md",
+        "owner": "Security Operations",
+        "trusted": true,
+        "tenant_id": "techcorp",
+        "allowed_groups": [
+          "Security"
+        ],
+        "source_system": "simulated-confluence",
+        "department": "security",
+        "classification": "restricted",
+        "document_id": "security-ir-001"
+      }
+    },
+    {
+      "rank": 3,
+      "chunk_id": "finance-forecast-001::chunk::0000",
+      "distance": 1.7499812841415405,
+      "metadata": {
+        "department": "finance",
+        "allowed_groups": [
+          "Finance",
+          "Executive"
+        ],
+        "source_system": "simulated-sharepoint",
+        "classification": "confidential",
+        "path": "data/documents/finance/fy2027_forecast.md",
+        "owner": "Finance",
+        "tenant_id": "techcorp",
+        "trusted": true,
+        "document_id": "finance-forecast-001"
+      }
+    },
+    {
+      "rank": 4,
+      "chunk_id": "engineering-architecture-001::chunk::0000",
+      "distance": 1.8506381511688232,
+      "metadata": {
+        "classification": "internal",
+        "owner": "Enterprise Architecture",
+        "tenant_id": "techcorp",
+        "allowed_groups": [
+          "Engineering",
+          "Architecture"
+        ],
+        "source_system": "simulated-confluence",
+        "document_id": "engineering-architecture-001",
+        "department": "engineering",
+        "path": "data/documents/engineering/architecture_standards.md",
+        "trusted": true
+      }
+    },
+    {
+      "rank": 5,
+      "chunk_id": "general-faq-001::chunk::0000",
+      "distance": 1.9659216403961182,
+      "metadata": {
+        "tenant_id": "techcorp",
+        "department": "general",
+        "source_system": "simulated-sharepoint",
+        "classification": "internal",
+        "document_id": "general-faq-001",
+        "allowed_groups": [
+          "Employees"
+        ],
+        "owner": "Corporate Communications",
+        "path": "data/documents/general/company_faq.md",
+        "trusted": true
+      }
+    }
+  ]
+}

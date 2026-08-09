@@ -146,3 +146,6 @@ vite.config.ts.timestamp-*
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Local vector database runtime state
+chroma_db/

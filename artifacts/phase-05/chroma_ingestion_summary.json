@@ -1,0 +1,12 @@
+{
+  "collection": "techcorp_docs",
+  "input_records": 5,
+  "stored_records": 5,
+  "ids": [
+    "general-faq-001::chunk::0000",
+    "engineering-architecture-001::chunk::0000",
+    "hr-compensation-001::chunk::0000",
+    "security-ir-001::chunk::0000",
+    "finance-forecast-001::chunk::0000"
+  ]
+}
