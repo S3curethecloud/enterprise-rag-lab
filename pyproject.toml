@@ -1,0 +1,21 @@
+[project]
+name = "enterprise-rag-lab"
+version = "0.1.0"
+description = "Educational enterprise Secure RAG architecture tutorial and hands-on lab"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb",
+    "flask",
+    "openai",
+    "sentence-transformers",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
