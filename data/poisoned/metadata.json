@@ -1,0 +1,15 @@
+[
+  {
+    "document_id": "poisoned-security-runbook-001",
+    "path": "data/poisoned/fake_security_runbook.md",
+    "tenant_id": "techcorp",
+    "department": "security",
+    "classification": "restricted",
+    "owner": "Unknown External Contributor",
+    "allowed_groups": [
+      "Security"
+    ],
+    "trusted": false,
+    "source_system": "unknown-upload"
+  }
+]

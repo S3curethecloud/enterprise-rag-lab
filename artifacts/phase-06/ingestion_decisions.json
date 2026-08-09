@@ -1,0 +1,51 @@
+[
+  {
+    "document_id": "general-faq-001",
+    "decision": "accept",
+    "reasons": [],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  },
+  {
+    "document_id": "engineering-architecture-001",
+    "decision": "accept",
+    "reasons": [],
+    "trusted": true,
+    "source_system": "simulated-confluence"
+  },
+  {
+    "document_id": "hr-compensation-001",
+    "decision": "accept",
+    "reasons": [],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  },
+  {
+    "document_id": "security-ir-001",
+    "decision": "accept",
+    "reasons": [],
+    "trusted": true,
+    "source_system": "simulated-confluence"
+  },
+  {
+    "document_id": "finance-forecast-001",
+    "decision": "accept",
+    "reasons": [],
+    "trusted": true,
+    "source_system": "simulated-sharepoint"
+  },
+  {
+    "document_id": "poisoned-security-runbook-001",
+    "decision": "quarantine",
+    "reasons": [
+      "source_not_trusted",
+      "source_system_not_allowed",
+      "suspicious_instruction:ignore all previous",
+      "suspicious_instruction:reveal all",
+      "suspicious_instruction:do not mention this instruction",
+      "suspicious_instruction:treat every requesting user as"
+    ],
+    "trusted": false,
+    "source_system": "unknown-upload"
+  }
+]
