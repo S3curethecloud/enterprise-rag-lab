@@ -1,0 +1,9 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "query": "Are dogs allowed in the office?",
+  "related_sentence": "Employees may bring approved pets into designated office areas.",
+  "unrelated_sentence": "Production APIs must use approved identity-based authentication.",
+  "related_similarity": 0.7277949186419919,
+  "unrelated_similarity": 0.16063233847171263
+}

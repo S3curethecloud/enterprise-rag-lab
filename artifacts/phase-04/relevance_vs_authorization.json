@@ -1,0 +1,66 @@
+{
+  "query": "What is the executive compensation policy?",
+  "identity": {
+    "user_id": "alice",
+    "tenant_id": "techcorp",
+    "groups": [
+      "Engineering",
+      "Employees"
+    ]
+  },
+  "results": [
+    {
+      "chunk_id": "hr-compensation-001::chunk::0000",
+      "document_id": "hr-compensation-001",
+      "similarity": 0.58921614694994,
+      "authorized": false,
+      "classification": "confidential",
+      "allowed_groups": [
+        "HR",
+        "Executive"
+      ]
+    },
+    {
+      "chunk_id": "security-ir-001::chunk::0000",
+      "document_id": "security-ir-001",
+      "similarity": 0.22845833603956583,
+      "authorized": false,
+      "classification": "restricted",
+      "allowed_groups": [
+        "Security"
+      ]
+    },
+    {
+      "chunk_id": "finance-forecast-001::chunk::0000",
+      "document_id": "finance-forecast-001",
+      "similarity": 0.12500944211273257,
+      "authorized": false,
+      "classification": "confidential",
+      "allowed_groups": [
+        "Finance",
+        "Executive"
+      ]
+    },
+    {
+      "chunk_id": "engineering-architecture-001::chunk::0000",
+      "document_id": "engineering-architecture-001",
+      "similarity": 0.07468101682552074,
+      "authorized": true,
+      "classification": "internal",
+      "allowed_groups": [
+        "Engineering",
+        "Architecture"
+      ]
+    },
+    {
+      "chunk_id": "general-faq-001::chunk::0000",
+      "document_id": "general-faq-001",
+      "similarity": 0.01703934721341939,
+      "authorized": true,
+      "classification": "internal",
+      "allowed_groups": [
+        "Employees"
+      ]
+    }
+  ]
+}

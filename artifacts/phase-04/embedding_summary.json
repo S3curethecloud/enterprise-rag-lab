@@ -1,0 +1,8 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_count": 5,
+  "embedding_dimensions": [
+    384
+  ],
+  "security_metadata_preserved": true
+}
