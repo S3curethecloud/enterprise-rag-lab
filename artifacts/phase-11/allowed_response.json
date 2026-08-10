@@ -1,0 +1,11 @@
+{
+  "user_id": "bob",
+  "question": "What is the executive compensation policy?",
+  "response_security": {
+    "decision": "allow",
+    "reasons": [],
+    "source_integrity_valid": true,
+    "finding_types": [],
+    "output_text": "Based on the authorized enterprise context: # TechCorp Executive Compensation Policy\n\nExecutive compensation information is confidential Human Resources information.\n\nCompensation packages may include salary, performance incentives, long-term incentives, and approved benefits.\n\nIndividual compensation details must only be accessed by authorized Human Resources personnel and specifically approved executives."
+  }
+}
