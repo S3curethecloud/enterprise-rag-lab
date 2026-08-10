@@ -1,0 +1,41 @@
+{
+  "architecture": "enterprise-secure-rag",
+  "core_rule": "The LLM never grants access to enterprise data. Authorization occurs before retrieved context reaches the model.",
+  "planes": {
+    "ingestion": [
+      "source_trust",
+      "metadata_validation",
+      "classification",
+      "content_inspection",
+      "quarantine",
+      "chunking",
+      "embedding",
+      "vector_storage"
+    ],
+    "query": [
+      "identity_propagation",
+      "semantic_retrieval",
+      "relevance_acceptance",
+      "tenant_authorization",
+      "acl_authorization",
+      "context_validation",
+      "bounded_context",
+      "grounded_generation",
+      "response_security"
+    ]
+  },
+  "response_decisions": [
+    "allow",
+    "redact",
+    "block"
+  ],
+  "evaluation": {
+    "security_regression_harness": true,
+    "behavioral_evidence": true
+  },
+  "application": {
+    "framework": "Flask",
+    "role": "thin orchestration layer"
+  },
+  "production_status": "educational reference architecture; production gaps explicitly documented"
+}
