@@ -128,45 +128,19 @@ Answer:
 
 What foundation does this phase provide for enterprise data, metadata, and later security controls?
 
-Then complete:
+Then complete the following from memory:
 
-```text
-Previous phase gives me:
+**Previous phase gives me:**
+
 _____________________________
 
-This phase guarantees:
+**This phase guarantees:**
+
 _____________________________
 
-Next phase depends on:
+**Next phase depends on:**
+
 _____________________________
-10. Memory Check
-
-Without looking at the documentation, write:
-
-the phase name;
-its primary purpose;
-its most important security principle;
-one failure it prevents;
-one analogy that helps you remember it.
-Submission Checklist
- I researched concepts beyond merely copying the lab.
- I answered every research question in my own words.
- I defended or challenged the thesis.
- I created my own analogy.
- I drew the control boundary.
- I explained what happens if this phase disappears.
- I connected this phase to the previous and next phases.
- I completed the teach-it-back challenge.
- I cited my research sources.
- I can explain the phase without reading the documentation.
-Grading Guide
-Area	Weight
-Technical understanding	25%
-Research quality	15%
-Security reasoning	20%
-Analogy and teach-back	15%
-Failure analysis	15%
-Architecture connection	10%
 
 ---
 
@@ -180,3 +154,28 @@ Without looking at the documentation, write:
 - one failure it prevents;
 - one analogy that helps you remember it.
 
+---
+
+## Submission Checklist
+
+- [ ] I researched concepts beyond merely copying the lab.
+- [ ] I answered every research question in my own words.
+- [ ] I defended or challenged the thesis.
+- [ ] I created my own analogy.
+- [ ] I drew the control boundary.
+- [ ] I explained what happens if this phase disappears.
+- [ ] I connected this phase to the previous and next phases.
+- [ ] I completed the teach-it-back challenge.
+- [ ] I cited my research sources.
+- [ ] I can explain the phase without reading the documentation.
+
+## Grading Guide
+
+| Area | Weight |
+|---|---:|
+| Technical understanding | 25% |
+| Research quality | 15% |
+| Security reasoning | 20% |
+| Analogy and teach-back | 15% |
+| Failure analysis | 15% |
+| Architecture connection | 10% |

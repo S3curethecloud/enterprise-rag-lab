@@ -100,3 +100,31 @@ def test_capstone_preserves_core_security_rule():
         "Authorization occurs before retrieved context reaches the model."
         in content
     )
+
+
+def test_every_assignment_has_single_memory_check():
+    for phase in PHASE_DIRECTORIES:
+        content = assignment_path(phase).read_text(
+            encoding="utf-8"
+        )
+
+        assert content.count("## 10. Memory Check") == 1
+
+
+def test_every_assignment_has_submission_and_grading_sections():
+    for phase in PHASE_DIRECTORIES:
+        content = assignment_path(phase).read_text(
+            encoding="utf-8"
+        )
+
+        assert "## Submission Checklist" in content
+        assert "## Grading Guide" in content
+
+
+def test_every_assignment_has_balanced_code_fences():
+    for phase in PHASE_DIRECTORIES:
+        content = assignment_path(phase).read_text(
+            encoding="utf-8"
+        )
+
+        assert content.count("```") % 2 == 0
