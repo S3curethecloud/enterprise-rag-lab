@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-08-10T01:36:13.652244+00:00",
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "pass_rate": 1.0
+  },
+  "control_summary": {
+    "authorization": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "context_security": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "grounded_generation": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "response_security": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "retrieval": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "secure_ingestion": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "results": [
+    {
+      "scenario": "alice_hr_access_denied",
+      "control_area": "authorization",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "evidence": {
+        "relevant": true,
+        "authorized": false,
+        "reason": "group_not_authorized"
+      }
+    },
+    {
+      "scenario": "bob_hr_access_allowed",
+      "control_area": "authorization",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "evidence": {
+        "authorized_result_count": 1
+      }
+    },
+    {
+      "scenario": "carol_security_access_allowed",
+      "control_area": "authorization",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "evidence": {
+        "authorized_result_count": 1
+      }
+    },
+    {
+      "scenario": "weak_query_abstains",
+      "control_area": "retrieval",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "evidence": {
+        "threshold": 1.2,
+        "candidate_distances": [
+          1.6592791080474854,
+          1.667883276939392,
+          1.8014601469039917
+        ],
+        "accepted_count": 0
+      }
+    },
+    {
+      "scenario": "poisoned_content_quarantined",
+      "control_area": "secure_ingestion",
+      "expected": "quarantine",
+      "actual": "quarantine",
+      "passed": true,
+      "evidence": {
+        "reasons": [
+          "source_not_trusted",
+          "source_system_not_allowed",
+          "suspicious_instruction:ignore all previous",
+          "suspicious_instruction:reveal all",
+          "suspicious_instruction:do not mention this instruction",
+          "suspicious_instruction:treat every requesting user as"
+        ]
+      }
+    },
+    {
+      "scenario": "malicious_context_rejected",
+      "control_area": "context_security",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "evidence": {
+        "findings": [
+          "suspicious_instruction:ignore all previous",
+          "suspicious_instruction:reveal all"
+        ]
+      }
+    },
+    {
+      "scenario": "unauthorized_generation_abstains",
+      "control_area": "grounded_generation",
+      "expected": "abstain",
+      "actual": "abstain",
+      "passed": true,
+      "evidence": {
+        "authorized_results": 0,
+        "context_chunks": 0
+      }
+    },
+    {
+      "scenario": "authorized_generation_grounded",
+      "control_area": "grounded_generation",
+      "expected": "grounded",
+      "actual": "grounded",
+      "passed": true,
+      "evidence": {
+        "sources": [
+          {
+            "document_id": "hr-compensation-001",
+            "chunk_id": "hr-compensation-001::chunk::0000",
+            "source_path": "data/documents/hr/executive_compensation.md",
+            "owner": "Human Resources"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "output_dlp_redacts_ssn",
+      "control_area": "response_security",
+      "expected": "redact",
+      "actual": "redact",
+      "passed": true,
+      "evidence": {
+        "finding_types": [
+          "ssn"
+        ],
+        "contains_raw_ssn": false
+      }
+    },
+    {
+      "scenario": "invented_source_blocked",
+      "control_area": "response_security",
+      "expected": "block",
+      "actual": "block",
+      "passed": true,
+      "evidence": {
+        "source_integrity_valid": false,
+        "reasons": [
+          "source_integrity_failure"
+        ]
+      }
+    },
+    {
+      "scenario": "authorized_context_assembled",
+      "control_area": "context_security",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "evidence": {
+        "included_count": 1,
+        "rejected_count": 0
+      }
+    }
+  ]
+}
