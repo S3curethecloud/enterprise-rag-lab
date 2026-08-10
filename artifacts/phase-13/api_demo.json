@@ -1,0 +1,68 @@
+{
+  "health": {
+    "status_code": 200,
+    "body": {
+      "service": "enterprise-rag",
+      "status": "ok"
+    }
+  },
+  "bob_hr": {
+    "status_code": 200,
+    "body": {
+      "answer": "Based on the authorized enterprise context: # TechCorp Executive Compensation Policy\n\nExecutive compensation information is confidential Human Resources information.\n\nCompensation packages may include salary, performance incentives, long-term incentives, and approved benefits.\n\nIndividual compensation details must only be accessed by authorized Human Resources personnel and specifically approved executives.",
+      "context": {
+        "included_count": 1,
+        "rejected_count": 0
+      },
+      "generation": {
+        "sources": [
+          {
+            "chunk_id": "hr-compensation-001::chunk::0000",
+            "document_id": "hr-compensation-001",
+            "owner": "Human Resources",
+            "source_path": "data/documents/hr/executive_compensation.md"
+          }
+        ],
+        "status": "grounded"
+      },
+      "question": "What is the executive compensation policy?",
+      "response_security": {
+        "decision": "allow",
+        "finding_types": [],
+        "reasons": [],
+        "source_integrity_valid": true
+      },
+      "retrieval": {
+        "authorized_result_count": 1
+      },
+      "user_id": "bob"
+    }
+  },
+  "alice_hr": {
+    "status_code": 200,
+    "body": {
+      "answer": "I do not have sufficient authorized enterprise context to answer that question.",
+      "context": {
+        "included_count": 0,
+        "rejected_count": 0
+      },
+      "generation": {
+        "sources": [],
+        "status": "abstain"
+      },
+      "question": "What is the executive compensation policy?",
+      "response_security": {
+        "decision": "allow",
+        "finding_types": [],
+        "reasons": [
+          "abstention_response"
+        ],
+        "source_integrity_valid": true
+      },
+      "retrieval": {
+        "authorized_result_count": 0
+      },
+      "user_id": "alice"
+    }
+  }
+}
